@@ -1749,6 +1749,99 @@ select {
   .cta-banner {
     background-attachment: scroll;
   }
+
+  /* Hero mejorado en móvil */
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-bg {
+    background-attachment: scroll; /* fixed no funciona bien en iOS */
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 5px 14px;
+  }
+
+  /* Botones hero apilados */
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Tarjetas de contacto en columna */
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonios: ancho mínimo menor */
+  .testimonial-card {
+    min-width: 280px;
+  }
+
+  /* Portfolio: 1 columna */
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .portfolio-item--wide,
+  .portfolio-item--tall,
+  .portfolio-item--full {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+
+  /* About badge */
+  .about-badge-float {
+    display: none;
+  }
+
+  /* Sección de proceso */
+  .process-step {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Extra pequeño: móviles de menos de 400px */
+@media (max-width: 400px) {
+  .nav-container {
+    padding: 0 16px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .stat-item {
+    flex: 1 0 100%;
+  }
+
+  .contact-card {
+    padding: 16px;
+  }
+
+  .testimonial-card {
+    min-width: 240px;
+    padding: 24px 18px;
+  }
 }
 
 /* ==========================================
