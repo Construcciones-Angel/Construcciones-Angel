@@ -147,13 +147,17 @@ const formSuccess = document.getElementById('form-success');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const name = document.getElementById('form-name').value.trim();
-  const phone = document.getElementById('form-phone').value.trim();
-  const message = document.getElementById('form-message').value.trim();
+  const nameInput = document.getElementById('form-name');
+  const phoneInput = document.getElementById('form-phone');
+  const messageInput = document.getElementById('form-message');
+  
+  const name = nameInput.value.trim();
+  const phone = phoneInput.value.trim();
+  const message = messageInput.value.trim();
 
   if (!name || !phone || !message) {
     // Highlight empty required fields
-    [document.getElementById('form-name'), document.getElementById('form-phone'), document.getElementById('form-message')].forEach(el => {
+    [nameInput, phoneInput, messageInput].forEach(el => {
       if (!el.value.trim()) {
         el.style.borderColor = '#e05252';
         el.addEventListener('input', () => { el.style.borderColor = ''; }, { once: true });
@@ -162,21 +166,43 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  // Simulate form submit success
   const submitBtn = document.getElementById('form-submit');
   submitBtn.disabled = true;
   submitBtn.textContent = 'Enviando...';
 
-  setTimeout(() => {
+  // Prepare data for Formspree
+  const formData = new FormData(form);
+  
+  fetch(form.action, { 
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      formSuccess.style.display = 'block';
+      formSuccess.className = 'form-success'; // Reset class
+      formSuccess.innerHTML = '<span>✅</span> ¡Mensaje enviado con éxito! Te contactaremos pronto.';
+      form.reset();
+      
+      setTimeout(() => {
+        formSuccess.style.display = 'none';
+      }, 8000);
+    } else {
+      throw new Error('Error en el envío');
+    }
+  })
+  .catch(error => {
     formSuccess.style.display = 'block';
-    form.reset();
+    formSuccess.className = 'form-error'; // Switch to error styling
+    formSuccess.innerHTML = '<span>❌</span> Ups! Hubo un problema. Por favor, llámanos directamente.';
+  })
+  .finally(() => {
     submitBtn.disabled = false;
     submitBtn.textContent = 'Enviar solicitud';
-
-    setTimeout(() => {
-      formSuccess.style.display = 'none';
-    }, 5000);
-  }, 1200);
+  });
 });
 
 // ---- Back to top ----
