@@ -1949,3 +1949,114 @@ select {
   border-color: var(--primary-blue);
   color: var(--white);
 }
+
+/* ==========================================
+   HABITISSIMO ELEMENTS
+   ========================================== */
+
+.habitissimo-widget-section {
+  background: var(--dark-2);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.widget-placeholder {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-lg);
+  border: 2px dashed rgba(200, 148, 60, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.widget-empty-state {
+  text-align: center;
+  max-width: 500px;
+}
+
+.widget-empty-state svg {
+  width: 80px;
+  height: 80px;
+  color: var(--gold);
+  margin-bottom: 24px;
+  opacity: 0.5;
+}
+
+.widget-empty-state p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+
+/* Habitissimo Seal in Footer */
+.footer-badge-wrap {
+  margin-top: 40px;
+}
+
+.habitissimo-seal {
+  display: inline-block;
+  background: var(--white);
+  padding: 20px 24px;
+  border-radius: 16px;
+  border: 5px solid #eaeaea;
+  text-align: center;
+  max-width: 240px;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.habitissimo-seal:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--gold);
+  box-shadow: 0 15px 40px rgba(200, 148, 60, 0.25);
+}
+
+.seal-header {
+  color: #0077c8;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.seal-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.logo-h {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1d4d77;
+  letter-spacing: -0.03em;
+}
+
+.logo-dot {
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(to right, #1d4d77 50%, #e03e3e 50%);
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.seal-footer {
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.seal-footer strong {
+  display: block;
+  color: #333;
+  font-weight: 700;
+}
