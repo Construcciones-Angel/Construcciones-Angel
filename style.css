@@ -2076,4 +2076,27 @@ select {
   display: block;
   color: #444;
 }
+
+/* Habitissimo Widget Section */
+.habitissimo-widget-section {
+  background: var(--dark-3);
+  padding-bottom: 60px;
+}
+
+.habitissimo-widget-wrap {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* Fix for widget script styling */
+.habitissimo-widget-wrap a {
+  display: none !important; /* Hide the link, it will be replaced by the widget */
+}
 
