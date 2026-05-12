@@ -240,14 +240,24 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-// ---- WhatsApp float button entrance ----
+// ---- Floating buttons entrance ----
 setTimeout(() => {
+  // WhatsApp (Right)
   const whatsappBtn = document.getElementById('whatsapp-float');
   if (whatsappBtn) {
     whatsappBtn.style.animation = 'slideInRight 0.5s ease forwards';
     const s = document.createElement('style');
     s.textContent = `@keyframes slideInRight { from { transform: translateX(80px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }`;
     document.head.appendChild(s);
+  }
+
+  // Habitissimo (Left)
+  const habitissimoBtn = document.getElementById('habitissimo-float');
+  if (habitissimoBtn) {
+    habitissimoBtn.style.animation = 'slideInLeft 0.5s ease forwards';
+    const s2 = document.createElement('style');
+    s2.textContent = `@keyframes slideInLeft { from { transform: translateX(-80px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }`;
+    document.head.appendChild(s2);
   }
 }, 1500);
 
