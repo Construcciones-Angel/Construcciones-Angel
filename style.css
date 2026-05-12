@@ -1958,23 +1958,23 @@ select {
   position: fixed;
   bottom: 28px;
   left: 28px;
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   background: var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1001; /* Above almost everything */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-  border: 2px solid var(--gold); /* Gold border to make it pop */
+  border: 1.5px solid var(--gold);
   cursor: pointer;
 }
 
 .hb-float-icon {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   background: linear-gradient(135deg, #1d4d77 50%, #e03e3e 50%);
   border-radius: 50%;
   position: relative;
@@ -1988,7 +1988,7 @@ select {
   transform: translate(-50%, -55%);
   color: white;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 11px;
   font-family: 'Montserrat', sans-serif;
 }
 
