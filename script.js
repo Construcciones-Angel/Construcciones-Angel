@@ -145,7 +145,7 @@ const form = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
+  // e.preventDefault(); // Desactivado temporalmente para diagnóstico
 
   const nameInput = document.getElementById('form-name');
   const phoneInput = document.getElementById('form-phone');
@@ -156,6 +156,7 @@ form.addEventListener('submit', (e) => {
   const message = messageInput.value.trim();
 
   if (!name || !phone || !message) {
+    e.preventDefault(); // Solo bloqueamos si faltan datos
     // Highlight empty required fields
     [nameInput, phoneInput, messageInput].forEach(el => {
       if (!el.value.trim()) {
@@ -166,43 +167,9 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
+  // El formulario se enviará de forma normal y nos redirigirá a Formspree para ver el mensaje de confirmación
   const submitBtn = document.getElementById('form-submit');
-  submitBtn.disabled = true;
   submitBtn.textContent = 'Enviando...';
-
-  // Prepare data for Formspree
-  const formData = new FormData(form);
-  
-  fetch(form.action, { 
-    method: form.method,
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      formSuccess.style.display = 'block';
-      formSuccess.className = 'form-success'; // Reset class
-      formSuccess.innerHTML = '<span>✅</span> ¡Mensaje enviado con éxito! Te contactaremos pronto.';
-      form.reset();
-      
-      setTimeout(() => {
-        formSuccess.style.display = 'none';
-      }, 8000);
-    } else {
-      throw new Error('Error en el envío');
-    }
-  })
-  .catch(error => {
-    formSuccess.style.display = 'block';
-    formSuccess.className = 'form-error'; // Switch to error styling
-    formSuccess.innerHTML = '<span>❌</span> Ups! Hubo un problema. Por favor, llámanos directamente.';
-  })
-  .finally(() => {
-    submitBtn.disabled = false;
-    submitBtn.textContent = 'Enviar solicitud';
-  });
 });
 
 // ---- Back to top ----
