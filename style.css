@@ -2082,20 +2082,4 @@ select {
   background: var(--dark-3);
   padding-bottom: 80px;
 }
-
-.habitissimo-widget-wrap {
-  background: white;
-  border-radius: var(--radius);
-  padding: 10px;
-  min-height: 150px; /* Reducido para que no sea un bloque blanco gigante si tarda en cargar */
-  box-shadow: var(--shadow);
-  width: 100%;
-}
-
-/* Permitimos que el enlace se vea si el script falla, para que al menos haya un link */
-.habitissimo-widget-wrap a {
-  color: var(--primary-blue);
-  font-weight: 600;
-  text-decoration: underline;
-}
 
