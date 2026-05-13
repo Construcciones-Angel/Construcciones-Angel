@@ -45,6 +45,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-h);
+  overflow-x: hidden;
 }
 
 body {
@@ -234,7 +235,7 @@ select {
 #navbar.scrolled {
   background: rgba(17, 18, 19, 0.97);
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(12px);
+  /* Removed backdrop-filter to prevent creating a containing block for the fixed mobile menu */
 }
 
 .nav-container {
@@ -1834,12 +1835,65 @@ select {
     flex-direction: column;
     text-align: center;
   }
+
+  .google-badge {
+    flex-direction: column;
+    padding: 24px;
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .google-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .habitissimo-float {
+    width: 44px;
+    height: 44px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .whatsapp-tooltip,
+  .habitissimo-tooltip {
+    display: none !important;
+  }
+
+  .habitissimo-widget-external-container {
+    overflow-x: auto;
+    max-width: 100vw;
+  }
 }
 
 /* Extra pequeño: móviles de menos de 400px */
 @media (max-width: 400px) {
   .nav-container {
     padding: 0 16px;
+  }
+
+  .main-logo {
+    height: 44px;
+  }
+
+  .logo-name {
+    font-size: 0.95rem;
+  }
+
+  .logo-sub {
+    font-size: 0.6rem;
   }
 
   .container {
