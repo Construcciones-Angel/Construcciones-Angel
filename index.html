@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construcciones Ángel – Albañilería y Reformas | Tu obra en buenas manos</title>
+  <meta name="description"
+    content="Construcciones Ángel, especialistas en albañilería y reformas integrales en Asturias. Más de 2 años de experiencia en reformas de baños, cocinas y obras en general. Presupuesto sin compromiso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR =====-->
+
+  <!--Comentario prueba -->
+
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" id="logo-link">
+        <img src="images/logo_bueno.png" alt="Construcciones Ángel" class="main-logo" />
+        <div class="logo-text">
+          <span class="logo-name">Construcciones Ángel</span>
+          <span class="logo-sub">Albañilería &amp; Reformas</span>
+        </div>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#testimonios" class="nav-link">Opiniones</a></li>
+          <li><a href="#contacto" class="nav-link nav-cta" id="nav-cta-btn">Contactar</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Más de 25 años de experiencia
+      </div>
+      <h1 class="hero-title reveal-up">
+        Tu obra en<br />
+        <span class="hero-accent">buenas manos</span>
+      </h1>
+      <p class="hero-subtitle reveal-up">
+        Especialistas en albañilería y reformas integrales en Asturias.
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#contacto" class="btn btn-primary" id="hero-cta">Pedir presupuesto gratis</a>
+        <a href="#proyectos" class="btn btn-outline" id="hero-projects">Ver nuestros proyectos</a>
+      </div>
+    </div>
+    <div class="hero-scroll" id="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-bar" id="stats">
+    <div class="stats-container">
+      <div class="stat-item" id="stat-1">
+        <span class="stat-number" data-target="25">0</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item" id="stat-2">
+        <span class="stat-number" data-target="100" data-prefix="+">0</span>
+        <span class="stat-label">Obras completadas</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item" id="stat-3">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-label">% Clientes satisfechos</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item" id="stat-4">
+        <span class="stat-number" data-target="4.8">0</span>
+        <span class="stat-label">★ Valoración Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Nuestros servicios</span>
+        <h2 class="section-title">Todo lo que tu obra necesita</h2>
+        <p class="section-desc">Ofrecemos una amplia gama de servicios de construcción y reforma, realizados con los
+          mejores materiales y la máxima profesionalidad.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" id="service-albanileria">
+          <div class="service-img-wrap">
+            <img src="images/albanileria.png" alt="Servicio de albañilería profesional" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 20h20M4 20V8l8-6 8 6v12M10 20v-6h4v6" />
+              </svg>
+            </div>
+            <h3>Albañilería General</h3>
+            <p>Obra nueva y trabajos de albañilería en general. Tabiquería, muros, pilares y todo tipo de construcción
+              en ladrillo y bloque.</p>
+            <a href="#contacto" class="service-link">Solicitar presupuesto →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" id="service-reformas">
+          <div class="service-img-wrap">
+            <img src="images/reformas.png" alt="Reformas integrales de baños y cocinas" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="1" />
+                <path d="M8 21h8M12 17v4" />
+                <path d="M6 8h12M6 11h8" />
+              </svg>
+            </div>
+            <h3>Reformas Integrales</h3>
+            <p>Reformamos baños, cocinas, viviendas completas y locales comerciales. Diseño, ejecución y acabados de
+              alta calidad en un solo equipo.</p>
+            <a href="#contacto" class="service-link">Solicitar presupuesto →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" id="service-solados">
+          <div class="service-img-wrap">
+            <img src="images/solados.png" alt="Solados y Alicatados" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="9" height="9" rx="1" />
+                <rect x="13" y="2" width="9" height="9" rx="1" />
+                <rect x="2" y="13" width="9" height="9" rx="1" />
+                <rect x="13" y="13" width="9" height="9" rx="1" />
+              </svg>
+            </div>
+            <h3>Solados y Alicatados</h3>
+            <p>Instalación de suelos y azulejos en cualquier estancia, con todo tipo de materiales: porcelánicos,
+              cerámicas, mármol y más.</p>
+            <a href="#contacto" class="service-link">Solicitar presupuesto →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" id="service-obra-nueva">
+          <div class="service-img-wrap">
+            <img src="images/obra_nueva.png" alt="Obra nueva" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M2 20h20M4 20V8l8-6 8 6v12M10 20v-6h4v6" />
+                <path d="M12 2v6M9 8h6" />
+              </svg>
+            </div>
+            <h3>Obra Nueva</h3>
+            <p>Construcción de viviendas, garajes, naves y todo tipo de obra nueva desde los cimientos. Calidad y
+              solidez garantizada.</p>
+            <a href="#contacto" class="service-link">Solicitar presupuesto →</a>
+          </div>
+        </div>
+
+        <div class="service-card reveal-up" id="service-pladur">
+          <div class="service-img-wrap">
+            <img src="images/pladur.png" alt="Pladur y Tabiquería" loading="lazy" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+                <path d="M3 9h18M3 15h18M9 3v18M15 3v18" />
+              </svg>
+            </div>
+            <h3>Pladur y Tabiquería</h3>
+            <p>Distribución de espacios con sistemas de pladur y tabiquería ligera. Rápido, limpio y eficiente para todo
+              tipo de obras.</p>
+            <a href="#contacto" class="service-link">Solicitar presupuesto →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="nosotros">
+    <div class="container about-container">
+      <div class="about-visual reveal-left">
+        <div class="about-img-main">
+          <img src="images/albanileria.png" alt="El equipo de Construcciones Ángel trabajando" />
+        </div>
+
+        <div class="about-badge-float">
+          <span class="float-num">+25</span>
+          <span class="float-text">años de<br />experiencia</span>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="section-tag">Sobre nosotros</span>
+        <h2 class="section-title">Construimos con pasión<br />desde hace más de 25 años</h2>
+        <p class="about-lead">Somos un equipo de profesionales de la construcción con décadas de experiencia en
+          albañilería y reformas. Fundada por Ángel, nuestra empresa ha crecido sobre los pilares del trabajo bien
+          hecho, la honestidad y la atención al cliente.</p>
+        <p class="about-text">Abordamos cada proyecto, grande o pequeño, con el mismo compromiso: entregar un resultado
+          de calidad, en los plazos acordados y con el presupuesto cerrado. No hay sorpresas, solo resultados.</p>
+        <ul class="about-features">
+          <li id="feat-1">
+            <div class="feat-icon">✔</div>
+            <div>
+              <strong>Presupuestos cerrados</strong>
+            </div>
+          </li>
+          <li id="feat-2">
+            <div class="feat-icon">✔</div>
+            <div>
+              <strong>Equipo propio y cualificado</strong>
+            </div>
+          </li>
+          <li id="feat-3">
+            <div class="feat-icon">✔</div>
+            <div>
+              <strong>Materiales de primera calidad</strong>
+            </div>
+          </li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary" id="about-cta">Hablar con nosotros</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section portfolio" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Trabajos realizados</span>
+        <h2 class="section-title">Una muestra de nuestros últimos trabajos.</h2>
+      </div>
+      <div class="portfolio-blocks">
+
+        <!-- Baños -->
+        <div class="portfolio-block reveal-up">
+          <h3 class="portfolio-block-title">Reformas de Baños</h3>
+          <div class="portfolio-grid">
+            <div class="portfolio-item portfolio-item--wide portfolio-item--tall">
+              <img src="images/REFORMA BAÑO QUILES/REFORMA BAÑO QUILES.jpg" alt="Reforma de baño Quiles"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item portfolio-item--tall">
+              <img src="images/REFORMA BAÑO QUILES/REFORMA BAÑO QUILES 2.jpg" alt="Reforma de baño Quiles 2"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reforma Integral -->
+        <div class="portfolio-block reveal-up">
+          <h3 class="portfolio-block-title">Reformas Integrales</h3>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA SALON.jpg" alt="Reforma de salón" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA COCINA GRANDE DE REFORMA INTEGRAL.jpg"
+                alt="Reforma de cocina grande" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item portfolio-item--tall">
+              <img src="images/REFORMA INTEGRAL/REFORMA BAÑO GRANDE DE REFORMA INTEGRAL.jpg"
+                alt="Reforma de baño grande" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA TERRAZA GRANDE DE REFORMA INTEGRAL.jpg"
+                alt="Reforma de terraza grande" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA HABITACION GRANDE DE REFORMA INTEGRAL.jpg"
+                alt="Reforma de habitación" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA DESPACHO DE REFORMA INTEGRAL.jpg" alt="Reforma de despacho"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA PASILLO DE REFORMA INTEGRAL.jpg" alt="Reforma de pasillo"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/REFORMA PASILLO 2 DE REFORMA INTEGRAL.jpg" alt="Reforma de pasillo 2"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/SALON ANTIGUO PREVIO A REFORMA INTEGRAL.png"
+                alt="Salón antes de reforma" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/COCINA ANTIGUA PREVIO A REFORMA INTEGRAL.png"
+                alt="Cocina antes de reforma" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/BAÑO ANTIGUA PREVIO A REFORMA INTEGRAL.png" alt="Baño antes de reforma"
+                loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/HABITACION ANTIGUA PREVIO A REFORMA INTEGRAL.png"
+                alt="Habitación antes de reforma" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA INTEGRAL/TERRAZA ANTIGUA PREVIO A REFORMA INTEGRAL.png"
+                alt="Terraza antes de reforma" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ducha y Mampara -->
+        <div class="portfolio-block reveal-up">
+          <h3 class="portfolio-block-title">Ducha y Mampara</h3>
+          <div class="portfolio-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 600px; margin: 0 auto;">
+            <div class="portfolio-item">
+              <img src="images/REFORMA PLATO DE DUCHA Y MAPARA/CAMBIO PLATO DE DUCHA Y MAMPARA.jpg"
+                alt="Cambio plato de ducha" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA PLATO DE DUCHA Y MAPARA/PLATO DE DUCHA Y MAMPARA NUEVOS.jpg"
+                alt="Plato de ducha nuevo" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porches -->
+        <div class="portfolio-block reveal-up">
+          <h3 class="portfolio-block-title">Porches</h3>
+          <div class="portfolio-grid" style="max-width: 900px; margin: 0 auto; grid-auto-rows: 350px;">
+            <div class="portfolio-item portfolio-item--wide">
+              <img src="images/REFORMA PORCHE/REFORMA PORCHE 1.jpg" alt="Reforma de porche 1" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/REFORMA PORCHE/REFORMA PORCHE 2.jpg" alt="Reforma de porche 2" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+            <div class="portfolio-item portfolio-item--full">
+              <img src="images/REFORMA PORCHE/REFORMA PORCHE 3.jpg" alt="Reforma de porche 3" loading="lazy" />
+              <div class="portfolio-overlay"><span class="portfolio-cat">Ver imagen</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section process" id="proceso">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Cómo trabajamos</span>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal-up" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>Visita y presupuesto</h3>
+            <p>Visitamos tu obra sin compromiso, evaluamos el trabajo y te entregamos un presupuesto detallado</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Planificación</h3>
+            <p>Acordamos plazos, materiales y calendario de ejecución.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Ejecución</h3>
+            <p>Se ejecuta el trabajo con profesionalidad, manteniendo el orden y limpieza en la obra.
+            </p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step reveal-up" id="step-4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>Entrega</h3>
+            <p>Revision profesional del trabajo finalizado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Opiniones de clientes</span>
+        <h2 class="section-title">Que dicen nuestro clientes</h2>
+      </div>
+      <div class="slider-wrapper">
+        <button class="slider-btn prev-btn" id="test-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="testimonials-slider" id="testimonials-track">
+          <div class="testimonial-card reveal-up" id="test-1">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Súper buena experiencia de principio a fin. Tanto la persona que te atiende desde el
+              minuto uno, como el propio Angel. Genial. Super amables y muy buen trabajo, muy fino y te limpia después
+              de la obra todo lo que puede. Teléfono guardado para la próxima sin duda. 😊"</p>
+            <div class="test-author">
+              <div class="author-avatar">M</div>
+              <div>
+                <strong>Cinthia Casas Alvarez</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-2">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Un gran profesional a un precio excelente,una persona con mucha palabra y de lo que ya
+              no queda,un trabajo excelente y muy contento con el trato ,recomendable totalmente .."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#2d6a4f">J</div>
+              <div>
+                <strong>Jose de Asturias</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-3">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Encontré a esta empresa casualmente por Internet ya que llevaba desde marzo esperando
+              para realizar una obra en un baño, y me iban dando largas. Lo primero que me llamó la atención fue la
+              seriedad, me dijo una fecha y en esa fecha empezó la obra. El trabajo quedó impecable, quedamos muy muy
+              contentos y contaremos con ellos para todas las reformas que tenga que hacer. Serios, profesionales, buen
+              precio, y muy importante gente de palabra en la que se puede confiar. Muchísimas gracias por todo."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#7b2d8b">C</div>
+              <div>
+                <strong>LOLI MUÑIZ</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-4">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Muy buen profesional. Lo dejó todo perfecto y se ciñó al presupuesto acordado.
+              Recomiendo a Ángel sin duda.."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#1a5276">A</div>
+              <div>
+                <strong>Sheila Vazquez Alves</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-5">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"El mejor, me ha dejado el piso entero excelente! Partiendo de un piso que había que
+              tirar entero y hacerlo de nuevo, haciendo todo tipo de instalaciones a las mil maravillas y atendiendo
+              todas nuestras dudas y cambios, muchas gracias!!"</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#c0392b">P</div>
+              <div>
+                <strong>Pet Grooming By Asturiana Abalorios</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-6">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Contratamos a Ángel para realizar a reforma prácticamente integral de un piso, quedo
+              todo genial, la verdad que el resultado inmejorables, cuida cada detalle y encima después nos lo dejo todo
+              muy limpio. No dudaremos en llamarle si tenemos que hacer una reforma posteriormente. Muchas gracias."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#d35400">E</div>
+              <div>
+                <strong>El Rubio R</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-7">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Muy contento con el trabajo de Construcciones Ángel. Son puntuales, profesionales y
+              muy detallistas en cada reforma. Me hicieron una reforma completa y todo quedo impecable. Recomendado
+              100%."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#16a085">J</div>
+              <div>
+                <strong>Jose Alberto Maldonado Lopez</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-8">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Un gran profesional, la obra del aseo quedo estupenda, pero ademas Angel nos iba
+              informando de todo y super bien, muy buen precio y lo dejo todo super limpio, un 10, recomiendo a Angel
+              200%."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#2980b9">S</div>
+              <div>
+                <strong>Sebastian</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-9">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Ángel realizó la reforma integral de un baño y la sustitución del suelo en toda la
+              vivienda, con resultados impecables. Destacan la calidad de los acabados y una excelente limpieza tras la
+              obra."</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#8e44ad">O</div>
+              <div>
+                <strong>Oscar M.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-10">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Ángel es muy buen profesional, facilidades desde el principio y trabajos de calidad.
+              En mi caso, realizó una puesta a punto de un piso y quedamos muy satisfechos (pintura, algo de fontanería,
+              estantería de pladur, reacondicionamiento de terraza etc.). Lo recomiendo totalmente!!"</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#27ae60">E</div>
+              <div>
+                <strong>E RM</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal-up" id="test-11">
+            <div class="stars">★★★★★</div>
+            <p class="test-text">"Excelente trabajo y profesionalismo Contratamos a Ángel para una obra en casa y
+              quedamos muy satisfechos con el resultado. Es muy responsable, puntual y cuida cada detalle del trabajo.
+              Se nota la experiencia y el compromiso en todo momento. Muy recomendable si buscan un servicio serio y de
+              calidad. ¡Gracias por un trabajo impecable!"</p>
+            <div class="test-author">
+              <div class="author-avatar" style="background:#f39c12">M</div>
+              <div>
+                <strong>Mónica Menéndez</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-btn next-btn" id="test-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="google-badge reveal-up" id="google-rating">
+        <svg class="google-icon" viewBox="0 0 24 24">
+          <path
+            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+            fill="#4285F4" />
+          <path
+            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+            fill="#34A853" />
+          <path
+            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+            fill="#FBBC05" />
+          <path
+            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+            fill="#EA4335" />
+        </svg>
+        <div class="google-info">
+          <span class="google-stars">★★★★★</span>
+          <strong>4,8 / 5</strong>
+          <span>en Google Business</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABITISSIMO WIDGET ===== -->
+  <section class="section habitissimo-widget-section" id="habitissimo-opiniones">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Garantía Habitissimo</span>
+        <h2 class="section-title">Fotos y Opiniones Reales</h2>
+        <p class="section-desc">Consulta nuestra trayectoria, fotos de proyectos y valoraciones certificadas por
+          Habitissimo.</p>
+      </div>
+
+      <div class="habitissimo-widget-external-container reveal-up"
+        style="text-align: center; width: 100%; min-height: 200px;">
+        <!-- Código exacto de Habitissimo -->
+        <div id="habitissimo-habitissimo_profile"><a
+            href="https://www.habitissimo.es/pro/construcciones-angel-albanileria-y-reformas">Construcciones Ángel –
+            Albañilería Y Reformas</a>
+          <script
+            src="https://api.habitissimo.es/widget/habitissimo_profile/construcciones-angel-albanileria-y-reformas.js"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" id="cta-banner">
+    <div class="cta-banner-overlay"></div>
+    <div class="cta-content reveal-up">
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <p>Llámanos o escríbenos hoy mismo y te damos presupuesto sin compromiso.</p>
+      <a href="#contacto" class="btn btn-primary btn-lg" id="cta-banner-btn">Solicitar presupuesto gratis</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contacto">
+    <div class="container contact-container">
+      <div class="contact-info reveal-left">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">Hablemos de tu proyecto</h2>
+        <p>Llamanos y cuéntanos qué necesitas o tambien puedes rellenar nuestro formulario y te damos una respuesta
+          rápida con presupuesto gratuito y sin compromiso.</p>
+
+        <div class="contact-cards">
+          <a href="tel:+34622460804" class="contact-card" id="contact-phone">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.75 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.66 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.64a16 16 0 0 0 5.45 5.45l1-1c.62-.62 1.5-.8 2.3-.48a12.84 12.84 0 0 0 2.8.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card-label">Teléfono</span>
+              <strong>+34 622 46 08 04</strong>
+            </div>
+          </a>
+          <a href="https://wa.me/34622460804" target="_blank" class="contact-card contact-card--whatsapp"
+            id="contact-whatsapp">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card-label">WhatsApp</span>
+              <strong>Escríbenos ahora</strong>
+            </div>
+          </a>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card-label">Zona de trabajo</span>
+              <strong>Asturias</strong>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-hours">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-card-label">Horario</span>
+              <strong>Lun–Vie: 9:00–18:00</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal-right">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
+          class="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="f958eebd-df7a-483e-93eb-c2d5f0cd9b09">
+          <input type="hidden" name="subject" value="Nueva solicitud de presupuesto - Construcciones Ángel">
+          <input type="hidden" name="from_name" value="Construcciones Ángel - Web">
+          <h3>Solicita tu presupuesto</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="form-name">Nombre *</label>
+              <input type="text" id="form-name" name="name" placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="form-phone">Teléfono *</label>
+              <input type="tel" id="form-phone" name="phone" placeholder="6XX XXX XXX" required autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="tu@email.com" autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="form-service">Tipo de trabajo</label>
+            <select id="form-service" name="service">
+              <option value="">Selecciona un servicio...</option>
+              <option value="albanileria">Albañilería general</option>
+              <option value="reforma-bano">Reforma de baño</option>
+              <option value="reforma-cocina">Reforma de cocina</option>
+              <option value="reforma-integral">Reforma integral</option>
+              <option value="solados">Solados y alicatados</option>
+              <option value="impermeabilizacion">Impermeabilización</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="form-message">Cuéntanos tu proyecto *</label>
+            <textarea id="form-message" name="message" rows="4"
+              placeholder="Describe brevemente el trabajo que necesitas..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="form-submit">Enviar solicitud</button>
+          <p class="form-note">Te responderemos en menos de 24 horas.</p>
+          <div class="form-success" id="form-success" aria-live="polite">
+            <span>✅</span> ¡Mensaje enviado! Te contactamos pronto.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="images/logo_bueno.png" alt="Construcciones Ángel" class="footer-logo-img" />
+            <div class="logo-text">
+              <span class="logo-name">Construcciones Ángel</span>
+              <span class="logo-sub">Albañilería &amp; Reformas</span>
+            </div>
+          </div>
+          <p>Más de 25 años construyendo confianza obra a obra. Tu proyecto en las mejores manos.</p>
+          <div class="footer-social">
+            <a href="https://www.google.com/search?q=construcciones+%C3%A1ngel+%E2%80%93+alba%C3%B1iler%C3%ADa+y+reformas&rlz=1C1GCEA_enES1190ES1190&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkzNjk4MmowajeoAgiwAgHxBflnVXlYgVhD&sourceid=chrome&ie=UTF-8"
+              target="_blank" rel="noopener noreferrer" class="social-link" id="footer-google"
+              aria-label="Google Business">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                  fill="#4285F4" />
+                <path
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                  fill="#34A853" />
+                <path
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                  fill="#FBBC05" />
+                <path
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                  fill="#EA4335" />
+              </svg>
+            </a>
+            <a href="https://wa.me/34622460804" class="social-link" id="footer-whatsapp" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Albañilería general</a></li>
+            <li><a href="#servicios">Reformas integrales</a></li>
+            <li><a href="#servicios">Solados y alicatados</a></li>
+            <li><a href="#servicios">Impermeabilización</a></li>
+            <li><a href="#servicios">Pladur y tabiquería</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#testimonios">Opiniones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+34622460804">+34 622 46 08 04</a></li>
+            <li><a href="https://wa.me/34622460804">WhatsApp</a></li>
+            <li>Asturias</li>
+            <li>Lun–Vie: 9:00–18:00</li>
+          </ul>
+          <!-- Habitissimo Seal -->
+          <a href="https://www.habitissimo.es/pro/construcciones-angel-albanileria-y-reformas" target="_blank"
+            rel="noopener noreferrer" class="habitissimo-seal">
+            <div class="seal-header">Encuéntranos en</div>
+            <div class="seal-logo">
+              <span class="logo-h">habitissimo</span>
+              <span class="logo-dot"></span>
+            </div>
+            <div class="seal-footer">
+              <strong>Construcciones Ángel –</strong>
+              <span>Albañilería Y Reformas</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Construcciones Ángel – Albañilería y Reformas. Todos los derechos reservados.</p>
+        <p>Diseño web profesional</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/34622460804" class="whatsapp-float" id="whatsapp-float" target="_blank"
+    aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+    </svg>
+    <span class="whatsapp-tooltip">¿Hablamos?</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <!-- Habitissimo Float Button -->
+  <a href="https://www.habitissimo.es/pro/construcciones-angel-albanileria-y-reformas" class="habitissimo-float"
+    id="habitissimo-float" target="_blank" aria-label="Perfil profesional en Habitissimo">
+    <div class="hb-float-icon"></div>
+    <span class="habitissimo-tooltip">Perfil profesional en Habitissimo</span>
+  </a>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Imagen en grande" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
